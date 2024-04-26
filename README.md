@@ -15,4 +15,21 @@ The original work for this study can be found in the following research article 
 - For reproduction purposes save the data folders "Arborio", "Basmati" and "Jasmine" in "data" folder
 - We used a random sample of 100 images from Arborio, Basmati and Jasmine rice species (i.e. 300 images in total)
 
-## Part 1 : Feature extraction
+## Part 1 : Data Preparation
+After succesfully importing the data and determining the contour of each rice specie, the next step was to try and gether the feature data, this includes the following variables:
+- Color features (including only the pixels within the contour) <br>
+
+    - Mean for each RGB color channel 
+    - Variance for each RGB color channel 
+    - Skewness for each RGB color channel 
+    - Kurtosis for each RGB color channel 
+    - Entropy for each RGB color channel 
+    
+Dimension features (after fitting an ellipse to the contour points) <br>
+
+    - the major axis length the ellipse 
+    - the minor axis length of the ellipse 
+    - area inside the contour 
+    - perimeter of the contour 
+    - roundness 
+    - aspect ratio 
