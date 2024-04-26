@@ -32,4 +32,18 @@ After succesfully importing the data and determining the contour of each rice sp
     - area inside the contour 
     - perimeter of the contour 
     - roundness 
-    - aspect ratio 
+    - aspect ratio
+      
+## Part 2 : Data exploration and Model Selection
+After getting the data ready, the next step was to perform some EDA to get a deeper look into the data, this have included the following :
+- Standardizing the data
+- Ploting a boxplot of each feature
+- Ploting a histogram of each feature
+- Ploting a pairplot for the features
+- PCA analysis using two components
+- Ploting PCA results, and coloring the data points according to their species
+
+  The analysis enabled us to make some early judgment regarding feature importance which will be later on supported with the model results
+Discuss your findings from the above figures, e.g. can you spot features which might be very useful in predicting the correct class?
+Can you see any clusters in PCA? Does this figure give you any clues, how well you will be able to classify the image types? Explain.
+How many PCA components are needed to cover 99% of the variance?
