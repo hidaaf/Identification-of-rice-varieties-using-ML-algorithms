@@ -25,7 +25,7 @@ After succesfully importing the data and determining the contour of each rice sp
     - Kurtosis for each RGB color channel 
     - Entropy for each RGB color channel 
     
-Dimension features (after fitting an ellipse to the contour points) <br>
+- Dimension features (after fitting an ellipse to the contour points) <br>
 
     - the major axis length the ellipse 
     - the minor axis length of the ellipse 
