@@ -35,15 +35,33 @@ After succesfully importing the data and determining the contour of each rice sp
     - aspect ratio
       
 ## Part 2 : Data exploration and Model Selection
-After getting the data ready, the next step was to perform some EDA to get a deeper look into the data, this have included the following :
-- Standardizing the data
-- Ploting a boxplot of each feature
-- Ploting a histogram of each feature
-- Ploting a pairplot for the features
-- PCA analysis using two components
-- Ploting PCA results, and coloring the data points according to their species
+
+- Data Exploration : After getting the data ready, the next step was to perform some EDA to get a deeper look into the data, this have included the following :
+
+  - Standardizing the data
+  - Ploting a boxplot of each feature
+  - Ploting a histogram of each feature
+  - Ploting a pairplot for the features
+  - PCA analysis using two components
+  - Ploting PCA results, and coloring the data points according to their species
 
   The analysis enabled us to make some early judgment regarding feature importance which will be later on supported with the model results
-Discuss your findings from the above figures, e.g. can you spot features which might be very useful in predicting the correct class?
-Can you see any clusters in PCA? Does this figure give you any clues, how well you will be able to classify the image types? Explain.
-How many PCA components are needed to cover 99% of the variance?
+
+- Model selection :
+  
+  - For this step we used a 5-fold repeated cross validation with 3 repetitions (RepeatedKFold from sklearn), in order to choose the hyperparameter ranges to be used.
+  - Three classifiers were tested : k Nearest Neighbors, Random Forest, and MLP
+  - For each classifier we report the best hyperparameter or the best combination of hyperparameters (in the case of RF we also report the feature importance)
+  - A plot of the accuracy versus the hyperparameter/hyperparameter combination was also done to highlight the best value
+
+## Part 3 : Performance estimation
+
+Using the previously gathered and standardized data, we performed the following steps to test the performance of the cosen models:
+
+- Estimate the performance of each model using nested cross validation (Using 10-fold cross validation for outer and 5-fold repeated cross validation with 3 repetitions for inner loop)
+- Select the best model in the inner loop using the hyperparameter combinations and ranges defined in the previous step
+- For each model, calculate the accuracy and the confusion matrix
+
+  **Model peformance**
+
+  The Random Forest classifier achieved the highest accuracy at **98.67%**, likely due to its capability to model complex, non-linear relationships by combining decision trees. In contrast, KNN classifiers, which are based on simple distance metrics, may struggle with non-linear data. MLP classifiers can model non-linear relationships, but may require more complex architectures and more data to do so. Additionally, Random Forest models offer variable importance measures, which can be useful for feature selection and interpretation, thereby enhancing classification performance.
