@@ -17,7 +17,7 @@ The original work for this study can be found in the following research article 
 - For reproduction purposes save the data folders "Arborio", "Basmati" and "Jasmine" in "data" folder
 - We used a random sample of 100 images from Arborio, Basmati and Jasmine rice species (i.e. 300 images in total)
 
-## Part 1 : Data Preparation
+## [Part 1 : Data Preparation](Part1.ipynb)
 After succesfully importing the data and determining the contour of each rice specie, the next step was to try and gether the feature data, this includes the following variables:
 - Color features (including only the pixels within the contour) <br>
 
@@ -36,7 +36,7 @@ After succesfully importing the data and determining the contour of each rice sp
     - roundness 
     - aspect ratio
       
-## Part 2 : Data exploration and Model Selection
+## [Part 2 : Data exploration and Model Selection](Part2.ipynb)
 
 - Data Exploration : After getting the data ready, the next step was to perform some EDA to get a deeper look into the data, this have included the following :
 
@@ -56,7 +56,7 @@ After succesfully importing the data and determining the contour of each rice sp
   - For each classifier we report the best hyperparameter or the best combination of hyperparameters (in the case of RF we also report the feature importance)
   - A plot of the accuracy versus the hyperparameter/hyperparameter combination was also done to highlight the best value
 
-## Part 3 : Performance estimation
+## [Part 3 : Performance estimation](Part3.ipynb)
 
 Using the previously gathered and standardized data, we performed the following steps to test the performance of the chosen models:
 
