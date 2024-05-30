@@ -1,6 +1,8 @@
 # Identification of Rice Varieties using ML algorithms : Project Overview
 This project was part of the TKO_3120 Machine Learning and Pattern Recognition course at the Universiy of Turku
 
+![Alt text](rice_varieties.png)
+
 ## Introduction
 Rice (Oryza sativa L.) has supported a greater number of people for a longer period of time than any other crop since it was domesticated between 8,000 to 10,000 years ago (Greenland, 1997). At present, rice is the staple food for more people than wheat, and 90 percent of total rice production is grown and consumed in Asia (Evans, 1998). As such, accurate classification of different varieties of rice is crucial for optimizing agricultural practices, improving crop management, and ensuring food safety.
 Machine learning algorithms can play a crucial role in automating the identification of rice varieties, which can be a time-consuming and labor-intensive task for human experts. By leveraging advanced algorithms and techniques for data analysis, machine learning can help to identify patterns and extract features from large datasets of rice images, which can then be used to classify different varieties of rice.
