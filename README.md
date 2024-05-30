@@ -56,7 +56,7 @@ After succesfully importing the data and determining the contour of each rice sp
 
 ## Part 3 : Performance estimation
 
-Using the previously gathered and standardized data, we performed the following steps to test the performance of the cosen models:
+Using the previously gathered and standardized data, we performed the following steps to test the performance of the chosen models:
 
 - Estimate the performance of each model using nested cross validation (Using 10-fold cross validation for outer and 5-fold repeated cross validation with 3 repetitions for inner loop)
 - Select the best model in the inner loop using the hyperparameter combinations and ranges defined in the previous step
